@@ -15,7 +15,7 @@ export default function SignOUT()
     return(
        < div className="flex justify-between items-center mb-8">
   <h1 className="text-4xl font-bold">Admin Dashboard</h1>
- <Button className="ml-auto" onClick={handleLogout} >Sign Out</Button>
+/* <Button className="ml-auto" onClick={handleLogout} >Sign Out</Button>
 </div>
     )
 }

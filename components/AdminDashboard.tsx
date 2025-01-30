@@ -5,6 +5,8 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@
 import { Button } from "./ui/button"
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "./ui/dialog"
 import { Refund } from "@prisma/client/wasm"
+import { Textarea } from "./ui/textarea"
+import { Label } from "./ui/label"
 
 type AdminDashboardProps = {
   refunds: Refund[]
@@ -97,6 +99,10 @@ export default function AdminDashboard({ refunds: initialRefunds }: AdminDashboa
                             View Document
                           </a>
                         </p>
+                        <div className="grid w-full gap-1.5">
+      <Label htmlFor="message">Add Comments </Label>
+      <Textarea placeholder="Type your message here." id="message"  required/>
+    </div>
                         {selectedRefund.status === "PENDING" && (
                           <div className="mt-4 space-x-2">
                             <Button onClick={() => handleApprove(selectedRefund.id)}>Approve</Button>
