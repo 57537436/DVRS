@@ -21,9 +21,7 @@ export default function RootLayout({
         <header className="bg-blue-600 text-white p-2">
         <div className="flex justify-between items-center mb-8">
          <Link href="/" ><h1 className="text-2xl font-bold">Revenue Services Lesotho - DVRS</h1></Link>
-         <Link href="/admin" className="text-white">
-            Admin Dashboard
-          </Link>
+         
           </div>
         </header>
        
