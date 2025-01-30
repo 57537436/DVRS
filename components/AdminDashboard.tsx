@@ -67,27 +67,28 @@ export default function AdminDashboard({ refunds: initialRefunds }: AdminDashboa
                 <Dialog trigger={<Button variant="outline" onClick={() => setSelectedRefund(refund)}>View</Button>}>
                   <DialogContent>
                     <DialogHeader>
-                      <DialogTitle>Refund Details</DialogTitle>
+                      <DialogTitle >Refund Details</DialogTitle>
                     </DialogHeader>
                     {selectedRefund && (
                       <div>
-                        <p>
+                        <p className="text-black">
                           <strong>Taxpayer Name:</strong> {selectedRefund.taxpayerName}
                         </p>
-                        <p>
+                        <p className="text-black">
                           <strong>Tax ID:</strong> {selectedRefund.taxId}
                         </p>
-                        <p>
+                        <p className="text-black">
                           <strong>Amount:</strong> {selectedRefund.refundAmount}
                         </p>
-                        <p>
+                        <p className="text-black">
                           <strong>Reason:</strong> {selectedRefund.reason}
                         </p>
-                        <p>
+                        <p className="text-black">
                           <strong>Status:</strong> {selectedRefund.status}
                         </p>
-                        <p>
+                        <p className="text-black">
                           <strong>Document:</strong>{" "}
+                          
                           <a
                             href={`/api/admin/document?path=${selectedRefund.documentPath}`}
                             target="_blank"

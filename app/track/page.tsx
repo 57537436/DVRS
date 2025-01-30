@@ -49,7 +49,7 @@ export default function TrackRefund() {
             value={trackingId}
             onChange={(e) => setTrackingId(e.target.value)}
             required
-            className="w-full p-2 border rounded"
+            className="w-full p-2 border rounded text-black"
           />
         </div>
         <button type="submit" className="bg-green-500 text-white px-4 py-2 rounded">
@@ -58,8 +58,8 @@ export default function TrackRefund() {
       </form>
       {refundStatus && (
         <div className="mt-4 p-4 bg-gray-100 rounded">
-          <h2 className="text-xl font-bold mb-2">Refund Status</h2>
-          <p>{refundStatus}</p>
+          <h2 className="text-xl font-bold mb-2 text-black">Refund Status</h2>
+          <p className="text-black">{refundStatus}</p>
         </div>
       )}
     </div>

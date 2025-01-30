@@ -101,7 +101,7 @@ export default function ApplyForRefund() {
             value={formData.taxpayerName}
             onChange={handleChange}
             required
-            className="w-full p-2 border rounded"
+            className="w-full p-2 border rounded text-black"
           />
         </div>
         <div className="mb-4">
@@ -115,7 +115,7 @@ export default function ApplyForRefund() {
             value={formData.taxId}
             onChange={handleChange}
             required
-            className="w-full p-2 border rounded"
+            className="w-full p-2 border rounded text-black"
           />
         </div>
         <div className="mb-4">
@@ -129,7 +129,7 @@ export default function ApplyForRefund() {
             value={formData.refundAmount}
             onChange={handleChange}
             required
-            className="w-full p-2 border rounded"
+            className="w-full p-2 border rounded text-black"
           />
         </div>
         <div className="mb-4">
@@ -142,7 +142,7 @@ export default function ApplyForRefund() {
             value={formData.reason}
             onChange={handleChange}
             required
-            className="w-full p-2 border rounded"
+            className="w-full p-2 border rounded text-black"
           ></textarea>
         </div>
         <div className="mb-4">
@@ -156,7 +156,7 @@ export default function ApplyForRefund() {
             onChange={handleFileChange}
             accept=".pdf,.jpg,.jpeg,.png"
             required
-            className="w-full p-2 border rounded"
+            className="w-full p-2 border rounded "
           />
           {fileError && <p className="text-red-500 mt-1">{fileError}</p>}
         </div>
