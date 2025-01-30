@@ -89,16 +89,15 @@ export default function AdminDashboard({ refunds: initialRefunds }: AdminDashboa
                           <strong>Status:</strong> {selectedRefund.status}
                         </p>
                         <p className="text-black">
-                          <strong>Document:</strong>{" "}
-                          
-                          <a
-                            href={`/api/admin/document?path=${selectedRefund.documentPath}`}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                          >
-                            View Document
-                          </a>
-                        </p>
+  <strong>Document:</strong>{" "}
+  <a
+    href={selectedRefund.documentPath} // Ensure this is a valid URL
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    View Document
+  </a>
+</p>
                         <div className="grid w-full gap-1.5">
       <Label htmlFor="message">Add Comments </Label>
       <Textarea placeholder="Type your message here." id="message"  required/>

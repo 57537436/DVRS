@@ -75,19 +75,29 @@ export default function ApplyForRefund() {
 
   return (
     <div>
-       <nav className="bg-blue-500 p-2">
-          <Link href="/" className="text-white mr-4">
-            Home
-          </Link>
-          <Link href="/apply" className="text-white mr-4">
-            Apply for Refund
-          </Link>
-          <Link href="/track" className="text-white mr-4">
-            Track Refund
-          </Link>
-         
-        </nav>
-      <h1 className="text-3xl font-bold mb-4">Apply for VAT Refund</h1>
+    <div>
+       <header className="bg-orange-500 text-white p-8 rounded-lg">
+  <div className="flex justify-between items-center mx-auto  w-3/4">
+    <Link href="/" >
+      <h1 className="text-2xl font-bold  hover:text-blue-900">Revenue Services Lesotho - DVRS</h1>
+    </Link>
+    
+    <div className="flex ml-auto">
+      <Link href="/" className="text-white mr-4  hover:text-blue-900">
+        Home
+      </Link>
+      <Link href="/apply" className="text-white mr-4 hover:text-blue-900">
+        Apply for Refund
+      </Link>
+      <Link href="/track" className="text-white  hover:text-blue-900">
+        Track Refund
+      </Link>
+    </div>
+  </div>
+</header>
+</div>
+<div>
+      <h1 className="text-3xl font-bold mb-4 mt-5">Apply for VAT Refund</h1>
       {submitError && <p className="text-red-500 mb-4">{submitError}</p>}
       <form onSubmit={handleSubmit} className="max-w-md">
         <div className="mb-4">
@@ -165,6 +175,8 @@ export default function ApplyForRefund() {
         </button>
       </form>
     </div>
+    </div>
+
   )
 }
 

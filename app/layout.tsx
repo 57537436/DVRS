@@ -18,12 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <header className="bg-blue-600 text-white p-2">
-        <div className="flex justify-between items-center mb-8">
-         <Link href="/" ><h1 className="text-2xl font-bold">Revenue Services Lesotho - DVRS</h1></Link>
-         
-          </div>
-        </header>
+     
        
         <main className="container mx-auto p-4">{children}</main>
       </body>
