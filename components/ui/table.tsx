@@ -7,7 +7,7 @@ export function Table({ children }: { children: ReactNode }) {
 }
 
 export function TableHeader({ children }: { children: ReactNode }) {
-  return <thead className="bg-gray-200">{children}</thead>
+  return <thead className="bg-gray-200 text-black">{children}</thead>
 }
 
 export function TableRow({ children }: { children: ReactNode }) {

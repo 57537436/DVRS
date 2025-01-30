@@ -1,5 +1,6 @@
 "use client"
 
+import Link from "next/link"
 import type React from "react"
 import { useState } from "react"
 
@@ -74,6 +75,18 @@ export default function ApplyForRefund() {
 
   return (
     <div>
+       <nav className="bg-blue-500 p-2">
+          <Link href="/" className="text-white mr-4">
+            Home
+          </Link>
+          <Link href="/apply" className="text-white mr-4">
+            Apply for Refund
+          </Link>
+          <Link href="/track" className="text-white mr-4">
+            Track Refund
+          </Link>
+         
+        </nav>
       <h1 className="text-3xl font-bold mb-4">Apply for VAT Refund</h1>
       {submitError && <p className="text-red-500 mb-4">{submitError}</p>}
       <form onSubmit={handleSubmit} className="max-w-md">

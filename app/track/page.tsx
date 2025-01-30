@@ -1,5 +1,6 @@
 "use client"
 
+import Link from "next/link"
 import { useState } from "react"
 
 export default function TrackRefund() {
@@ -24,6 +25,18 @@ export default function TrackRefund() {
 
   return (
     <div>
+       <nav className="bg-blue-500 p-2">
+          <Link href="/" className="text-white mr-4">
+            Home
+          </Link>
+          <Link href="/apply" className="text-white mr-4">
+            Apply for Refund
+          </Link>
+          <Link href="/track" className="text-white mr-4">
+            Track Refund
+          </Link>
+         
+        </nav>
       <h1 className="text-3xl font-bold mb-4">Track Your Refund</h1>
       <form onSubmit={handleSubmit} className="max-w-md mb-4">
         <div className="mb-4">

@@ -44,10 +44,10 @@ export default function AdminDashboard({ refunds: initialRefunds }: AdminDashboa
 
   return (
     <div>
-      <Table>
+      <Table >
         <TableHeader>
-          <TableRow>
-            <TableHead>ID</TableHead>
+          <TableRow >
+            <TableHead >ID</TableHead>
             <TableHead>Taxpayer Name</TableHead>
             <TableHead>Tax ID</TableHead>
             <TableHead>Amount</TableHead>
